@@ -1,3 +1,4 @@
+import interfaz
 
 def menu_principal():
     while True:
@@ -10,8 +11,7 @@ def menu_principal():
 
         op = input("Seleccione: ")
 
-        if op == "1": 
-            pass
+        if op == "1":interfaz.imprimir_lista()
         elif op == "2":
             pass 
         elif op == "3":
