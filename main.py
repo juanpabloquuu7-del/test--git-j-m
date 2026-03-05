@@ -12,8 +12,9 @@ def menu_principal():
         op = input("Seleccione: ")
 
         if op == "1":interfaz.imprimir_lista()
-        elif op == "2":
-            pass 
+        
+        elif op == "2": interfaz.capturar_nueva()
+
         elif op == "3":
             pass 
         elif op == "4":
