@@ -21,7 +21,9 @@ def agregar_empanada(nombre, precio):
     guardar_datos(lista)
 
 def proceso_eliminar(indice):
-    if 0 <= indice < len(bd_empanadas):
-        bd_empanadas.pop(indice)
+    lista = cargar_datos()
+    if 0 <= indice < len(lista):
+        lista.pop(indice)
+        guardar_datos(lista)
         return True
     return False
