@@ -17,8 +17,8 @@ def menu_principal():
 
         elif op == "3": interfaz.capturar_edicion()
 
-        elif op == "4":
-            pass 
+        elif op == "4": interfaz.capturar_eliminacion()
+        
         elif op == "5": 
             print("Cerrando caja... ¡Adiós!")
             break
