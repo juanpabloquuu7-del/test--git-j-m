@@ -25,3 +25,12 @@ def capturar_edicion():
         print("¡Cambio guardado!")
     else:
         print("Ese número no existe.")
+
+def capturar_eliminacion():
+    imprimir_lista()
+    idx = int(input("\n¿Cuál quieres quitar? (Número): "))
+    if logica.proceso_eliminar(idx):
+        print("¡Empanada borrada del sistema!")
+    else:
+        print("Error: No se encontró esa empanada.")
+
