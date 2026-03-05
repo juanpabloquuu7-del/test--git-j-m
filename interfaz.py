@@ -21,7 +21,7 @@ def capturar_edicion():
     idx = int(input("\nEscribe el número de la que vas a cambiar: "))
     n = input("Nombre nuevo: ")
     p = input("Precio nuevo: ")
-    if logica.proceso_editar(idx, n, p):
+    if logica.editar_empanada(idx, n, p):
         print("¡Cambio guardado!")
     else:
         print("Ese número no existe.")
