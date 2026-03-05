@@ -13,7 +13,7 @@ def capturar_nueva():
     print("\n-- Registro de Empanada --")
     n = input("¿Qué sabor es?: ")
     p = input("¿A cuánto la va a dar?: ")
-    logica.proceso_guardar(n, p)
+    logica.guardar_datos(n, p)
     print("¡Listo! Ya se agregó.")
 
 def capturar_edicion():
