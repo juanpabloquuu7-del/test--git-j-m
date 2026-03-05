@@ -10,15 +10,16 @@ def imprimir_lista():
             print(f"[{i+1}] {e['nombre']} --- ${e['precio']} {e['ingredientes']} {e['disponibilidad']}")
 
 def capturar_nueva():
-    print("\n-- Registro de Empanada --").strip
-    n = input("¿Qué sabor es?: ").strip
-    p = input("¿A cuánto la va a dar?: ").strip
-    i = input("Que ingredientes lleva: ").strip
+    print("\n-- Registro de Empanada --")
+    n = input("¿Qué sabor es?: ").strip()
+    p = input("¿A cuánto la va a dar?: ").strip()
+    i = input("Que ingredientes lleva: ").strip()
     while True:
-        d = input("Disponibles ? (Si/No)").capitalize().strip
+        d = input("Disponibles ? (Si/No)").capitalize().strip()
         if d != "Si" or "No":
             input ("Ingrese Si o No")
-        else :
+            return
+        elif d == "Si" or "No":
             break
     logica.agregar_empanada(n,p,i,d)
     print("¡Listo! Ya se agregó.")
@@ -28,9 +29,9 @@ def capturar_edicion():
     idx = int(input("\nEscribe el número de la que vas a cambiar: "))
     n = input("Nombre nuevo: ")
     p = input("Precio nuevo: ")
-    i = input("Que ingredientes lleva: ").strip
+    i = input("Que ingredientes lleva: ").strip()
     while True:
-        d = input("Disponibles ? (Si/No)").capitalize().strip
+        d = input("Disponibles ? (Si/No)").capitalize().strip()
         if d != "Si" or "No":
             input ("Ingrese Si o No")
         else :
